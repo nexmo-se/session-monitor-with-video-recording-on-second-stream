@@ -4,6 +4,11 @@
   
 
 A sample app that shows how to use Session Monitor to record when 2 or more users are streaming.
+- Archive status will start at `Not Avaialable` when the session is created (a user has created a session)
+- When the Session Monitor detects two(2) streams it will initiate recording. The Archive status will change to `Started`
+- If both streams disconnect, the Archive status will move to `Paused`. This will last for one(1) minute to give users a change to reconnect if needed
+- After being `Paused` for a minute, the Archive statues will change to `Download`
+- Once the download expires, the status will change to `Expored`
 
 ## Requirements
 1. Tokbox Account
