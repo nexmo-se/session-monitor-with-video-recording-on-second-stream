@@ -21,7 +21,7 @@ A sample app that shows how to use Session Monitor to record when 2 or more user
 
 1.  `npm install`
 
-2.  `node indes.js`
+2.  `node index.js`
 
 ## Opentok Session Monitor Config
 
