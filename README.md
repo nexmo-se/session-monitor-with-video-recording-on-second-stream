@@ -25,7 +25,7 @@ A sample app that shows how to use Session Monitor to record when 2 or more user
 
 ## Opentok Session Monitor Config
 
-1. Follow the steps on setting your monitoring callback here
+1. Follow the steps on setting your monitoring callback [here](https://tokbox.com/developer/guides/session-monitoring/)
 2. Use <current_URL>/session_monitor as your callback url
 
 ## Session Monitor Notes
