@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4b4b4b;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: auto;
+  font-size: 1rem;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: #f1f1f1;
+}
+
+.no-margin {
+  margin-bottom: 0px;
+
+}
+
+.bold {
+  color: #4b4b4b;
+  font-weight: 600;
+}
+
+.float-left {
+  float: left;
+  color: #202020;
+  font-weight: 600;
+}
+
+.float-right {
+  float: right;
+}
+
+.div_light {
+  background: #cdcccc;
+  padding: 5px;
+}
+
+.div_dark {
+  background: #b6b5b5;
+  padding: 5px;
+}
+
+.search {
+  max-width: 100%;
+  padding: 20px;
+  background: #dddddd;
+  position: relative;
+}
+
+.button {
+  max-width: 100px;
+  margin: 20px 0px;
+}
+
+.inline-edit{
+  width: auto;
+  display: inline
+}
+
+.control {
+  border: 0.1em solid rgb(211, 211, 211);
+  max-width: 500px;
+}
+
+
+.footer-container {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+
+.footer-container .f-col {
+  width: 50%;
+}
+
+.header-container {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  background-color: #272727;
+  padding: 20px;      
+  
+}
+
+.results {
+  background-color: #f3f0f0;
+  padding: 20px 20px 0px 20px
+}
+
+.session-title {
+  background-color: #f3f0f0;
+  padding: 20px 20px 0px 20px;
+  font-size: 1.2rem;
+}
+
+.header-container .f-col {
+  width: 50%;
+  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+            filter: invert(100%);
+}
+
+.floatingRectangle {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: auto;
+  padding: 0;
+}

@@ -1,0 +1,21 @@
+project:
+    name: tokbox-session-monitor-recorder
+instance:
+    name: dev
+    runtime: nodejs16
+    region: aws.euw1
+    application-id: <APP_ID>
+    environment:
+        - name: OPENTOK_KEY
+          value: <YOURKEY>
+        - name: OPENTOK_SECRET
+          secret: OPENTOK_SECRET
+    entrypoint:
+        - node
+        - index.js
+debug:
+    name: debug
+    entrypoint:
+        - nodemon
+        - --inspect
+        - index.js

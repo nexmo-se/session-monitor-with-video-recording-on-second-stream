@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script language="javascript" src="./jquery/jquery.min.js"></script>
+  <script language="javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <div class="header-container">
+    <div class="f-col title">
+      Session Search and Monitor
+    </div>
+    <div class="f-col">
+      <div class="float-right" id="call-foot">
+        <div>
+          <svg class="Vlt-site-logo__vonage" width="120px" viewBox="0 0 913 200" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor"
+              d="M45.3408,0 L-0.0002,0 L64.6808,146.958 C65.1748,148.081 66.7718,148.07 67.2508,146.942 L88.7628,96.337 L45.3408,0 Z">
+            </path>
+            <path fill="currentColor"
+              d="M183.4502,0 C183.4502,0 113.9562,159.156 104.6482,173.833 C93.8292,190.896 86.6592,197.409 73.3912,199.496 C73.2682,199.515 73.1772,199.621 73.1772,199.746 C73.1772,199.886 73.2912,200 73.4312,200 L114.9552,200 C132.9432,200 145.9152,184.979 153.1042,171.714 C161.2742,156.637 229.5902,0 229.5902,0 L183.4502,0 Z">
+            </path>
+            <path fill="currentColor"
+              d="M365.0527,127.6431 C364.9567,127.8531 364.6577,127.8531 364.5617,127.6431 L330.0887,52.2061 L310.7207,52.2061 C310.7207,52.2061 346.2497,132.2541 349.7987,138.2351 C353.2667,144.0801 357.4637,148.8991 364.8077,148.8991 C372.1517,148.8991 376.3487,144.0801 379.8167,138.2351 C383.3657,132.2541 418.8947,52.2061 418.8947,52.2061 L399.5267,52.2061 L365.0527,127.6431 Z">
+            </path>
+            <path fill="currentColor"
+              d="M470.187,134.2002 C451.454,134.2002 439.186,121.9992 439.186,99.9992 C439.186,77.9992 451.454,65.8002 470.187,65.8002 C488.853,65.8002 501.186,77.9992 501.186,99.9992 C501.186,121.9992 488.853,134.2002 470.187,134.2002 M470.187,50.0002 C440.854,50.0002 421.987,69.0002 421.987,99.9992 C421.987,131.0002 440.854,150.0002 470.187,150.0002 C499.453,150.0002 518.387,131.0002 518.387,99.9992 C518.387,69.0002 499.453,50.0002 470.187,50.0002">
+            </path>
+            <polygon fill="currentColor"
+              points="617.4829 52.2002 617.4829 147.8002 597.6299 147.8002 551.3499 77.9072 551.3499 147.8002 534.4169 147.8002 534.4169 52.2002 554.3359 52.2002 600.6169 122.5592 600.6169 52.2002">
+            </polygon>
+            <path fill="currentColor"
+              d="M662.8662,108.6001 L679.5432,69.5551 C679.6372,69.3361 679.9462,69.3361 680.0392,69.5551 L696.7162,108.6001 L662.8662,108.6001 Z M679.7912,51.1071 C672.8172,51.1071 668.5552,56.3981 665.7452,61.6891 C662.8662,67.1111 628.4302,147.8001 628.4302,147.8001 L646.1242,147.8001 L656.0112,124.6511 L703.5712,124.6511 L713.4582,147.8001 L731.1512,147.8001 C731.1512,147.8001 696.7162,67.1111 693.8372,61.6891 C691.0272,56.3981 686.7642,51.1071 679.7912,51.1071 L679.7912,51.1071 Z">
+            </path>
+            <path fill="currentColor"
+              d="M779.0156,110.9336 L809.3046,110.9336 C809.1626,125.7876 795.2966,134.2006 780.5996,134.2006 C762.1676,134.2006 750.0976,121.9986 750.0976,99.9996 C750.0976,76.2466 761.2716,65.6606 781.6336,65.6606 C794.3806,65.6606 804.9786,70.8726 807.2096,82.8856 L824.7716,82.8856 C821.6926,61.8536 802.3226,49.9996 780.5996,49.9996 C751.7376,49.9996 733.1746,68.9996 733.1746,99.9996 C733.1746,130.9996 751.7376,149.6286 780.5996,149.6286 C792.7686,149.6286 805.0416,143.1036 809.3636,136.2116 L809.3076,147.7996 L825.5076,147.7996 L825.5076,118.3036 L825.5076,96.3036 L779.0156,96.3036 L779.0156,110.9336 Z">
+            </path>
+            <polygon fill="currentColor"
+              points="912.5908 68.1992 912.5908 52.2002 843.8578 52.2002 843.8578 147.8002 912.5908 147.8002 912.5908 131.7992 860.7908 131.7992 860.7908 106.6672 908.5508 106.6672 908.5508 90.6662 860.7908 90.6662 860.7908 68.1992">
+            </polygon>
+          </svg>
+        </div>
+        <div class="float-right">
+          <span>A CSE Demo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="search">
+      <div class="floatingRectangle">
+        <h3>Quickstart:</h3>
+        <div style="font-size: larger;">- Follow the steps on setting your monitoring callback <a href="https://tokbox.com/developer/guides/session-monitoring/">here</a></div>
+        <div style="font-size: larger;">- Use <b>&lt;current_URL&gt;/session_monitor</b> as your callback url</div>
+        <div><br><br></div>
+        <div style="font-size: larger;">You can set project name via:</div>
+        <ul style="list-style-type:none;">
+           <li>&lt;current_URL&gt;/set_project_id_name?projecttid=PROJECTID&name=NAMEYOUWANT</li>
+           <li> *if you set NAMEYOUWANT to _ (underscore), it will remove the name of the project</li>
+        </ul>
+
+        <div style="font-size: larger;">To set session name you call:</div>
+        <ul style="list-style-type:none;">
+          <li>&lt;current_URL&gt;/set_session_name?sessionid=SESSIONID&name=NAMEYOUWANT</li>
+        </ul>
+        
+      </div>
+      <div>
+        <div>
+          <label for="project_id" class="">Choose which project</label>
+          <select name="project_id" class="inline-edit form-control control" id="project_id">
+            <option value="" selected>Any Project</option>
+            <% for (const [key, value] of Object.entries(projects)) { var val="<" +value['projectId']+">"
+              if (value["name"] != '') val = value["name"];
+              %>
+              <option value="<%= value['projectId'] %>">
+                <%= val %>
+              </option>
+              <%} %>
+          </select>
+          <br><br>
+        </div>
+        <div>
+          <label for="session_name" class="">Session Name or ID (Separate by comma for multiple names or IDs)
+          </label>
+          <input id="session_name" type="text" class="form-control control">
+          <br>
+        </div>
+
+        <div>
+          <label for="stream_count" class="">Stream Count is </label>
+          <select name="op" class="inline-edit form-control control" id="op">
+            <option value="==">equal to</option>
+            <option value="<">less than</option>
+            <option value=">">greater than</option>
+            <option value="<=">less than or equal</option>
+            <option value=">=">greater than or equal</option>
+            <option value="!=">not equal to</option>
+            <option value="" selected>anything</option>
+          </select>
+          <input id="stream_count" type="number" value="0" class="inline-edit form-control control">
+          <br><br>
+        </div>
+        <div>
+
+        </div>
+        <div>
+          <label for="stream_name" class="">Stream Name (Separate by comma for multiple names)</label>
+          <input id="stream_name" type="text" class="form-control control">
+        </div>
+        <div class="footer-container">
+          <div class="f-col">
+            <div class="button float-left">
+              <button id="filter" class="form-control control">Filter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="session-title">Results</div>
+    <div id="results" class="results row">
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var first_load = true;
+  var operator = encodeURIComponent($("#op").val());
+  var stream_name = encodeURIComponent($("#stream_name").val());
+  var stream_count = $("#stream_count").val();
+  var session_name = $("#session_name").val();
+  var project_id = $("#project_id").val();
+  if (operator == "") {
+    stream_count = ''
+    $("#stream_count").hide()
+  }
+
+  var render_cards = (stream_name = '', stream_count = -1, operator = "==", session_name, project_id) => $.get("get_all?" + "streamname=" + stream_name + "&streamcount=" + stream_count + "&streamcountoperator=" + operator + "&sessionname=" + session_name + "&projectname=" + project_id, function (data, status) {
+    html = "";
+    if (data != "empty")
+
+      data.forEach(function (entry) {
+        html += '<div class="column">'
+        html += `<div id="${entry.sessionId}" class="card">`
+        html += '<h6 class="card-title">Session Information </h6>'
+
+        html += `<div id="sessionId" class="div_dark"><span class="float-left">ID</span> <span class="float-right">${entry.sessionId}</span></div>`
+        html += `<div id="name" class="div_light"><span class="float-left">Name</span> <span class="float-right">${entry.name || ""}</span></div>`
+        html += `<div id="projectId" class="div_dark"><span class="float-left">Project ID</span> <span class="float-right">${entry.projectId}</span></div>`
+        html += `<div id="projectName" class="div_light"><span class="float-left">Project Name</span> <span class="float-right">${entry.projectName}</span></div>`
+        html += `<div id="timestamp" class="div_dark"><span class="float-left">Created At</span> <span class="float-right">${new Date(parseInt(entry.timestamp))}</span></div>`
+        html += `<div id="connections" class="div_light"><span class="float-left">Connections</span> <span class="float-right">${entry.connection_count}</span></div>`
+        if (entry.connections.length > 0) {
+          entry.connections.forEach(function (conn) {
+            html += `<div class="card no-margin">`
+            html += `<div id="${conn.id}" class="div_dark"><span class="float-left">Connection ID</span> <span class="float-right">${conn.id}</span></div>`
+            html += `<div id="connection_createdAt" class="div_light"><span class="float-left">Created At</span> <span class="float-right">${new Date(parseInt(conn.createdAt))}</span></div></div>`
+
+          });
+        };
+        html += `<div id="streams" class="div_dark"><span class="float-left">Streams</span> <span class="float-right">${entry.stream_count}</span></div>`
+        if (entry.streams.length > 0) {
+          entry.streams.forEach(function (stream) {
+            html += `<div class="card no-margin">`
+            html += `<div id="${stream.id}" class="div_dark"><span class="float-left">Stream ID</span> <span class="float-right">${stream.id}</span></div>`
+            html += `<div id="stream_name" class="div_light"><span class="float-left">Stream Name</span> <span class="float-right">${stream.name}</span></div>`
+            html += `<div id="videoType" class="div_dark"><span class="float-left">Stream Type</span> <span class="float-right">${stream.videoType}</span></div>`
+            html += `<div id="connection_id" class="div_light"><span class="float-left">From Connection ID</span> <span class="float-right">${stream.connection.id}</span></div>`
+            html += `<div id="stream_createdAt" class="div_dark"><span class="float-left">Created At</span> <span class="float-right">${new Date(parseInt(stream.createdAt))}</span></div></div >`
+          });
+        };
+        console.log(first_load)
+        if(first_load==true){
+          archive_stat = "Loading Status";
+          first_load = false;
+        }
+        else{
+          
+          archive_stat = entry.archive.status
+          if (entry.archive.status == "available")
+            archive_stat= '<a href="'+entry.archive.url+'" class="btn btn-info" role="button">Download</a>'            
+        }
+        
+        html += `<div id="archive" class="div_light"><span class="float-left">Archive</span> <span class="float-right">${archive_stat}</span></div>`
+        html += "</div ></div >"
+
+      });
+    $("#results").html(html)
+  });
+  $(function () {
+    render_cards(stream_name, stream_count, operator, session_name, project_id)
+    $("#filter").click(function () {
+      stream_name = encodeURIComponent($("#stream_name").val());
+      stream_count = $("#stream_count").val();
+      operator = encodeURIComponent($("#op").val());
+      session_name = encodeURIComponent($("#session_name").val());
+      project_id = $("#project_id").val()
+      if (operator == "") stream_count = ''
+      render_cards(stream_name, stream_count, operator, session_name, project_id)
+
+    });
+
+    $("#op").change(function () {
+      if ($(this).val() == "") {
+        $("#stream_count").hide()
+      } else $("#stream_count").show()
+    })
+
+    var intervalId = window.setInterval(function () {
+      render_cards(stream_name, stream_count, operator, session_name, project_id)
+    }, 5000);
+  });
+
+
+
+
+</script>
